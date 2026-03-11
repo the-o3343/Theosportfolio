@@ -37,11 +37,13 @@ body{
 @media (max-width: 767px) {
     .container{
         display: flex;
-        flex: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: rgb(47, 45, 45);
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        gap: none;
+
     }
 }
 
