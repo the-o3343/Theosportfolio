@@ -58,8 +58,6 @@ body{
     box-shadow: 2px 2px 10px rgb(114, 98, 98);
 }
 
-
-
 .logs{/* styled for logo in the header*/
     width: 50px;
     height: 10vb;
@@ -119,8 +117,6 @@ a.button{ /* styled for header button*/
 }
 
 
-
-
 a.button img{
     vertical-align:baseline; /* vertical align forces the images to stay on the same baseline as any giving text or Element*/
     height: 40px;
@@ -129,6 +125,33 @@ a.button img{
 a.button.links{
     background-color: rgba(6, 6, 6, 0.8);
     color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 767px){
+    a.button img{
+    vertical-align:baseline; /* vertical align forces the images to stay on the same baseline as any giving text or Element*/
+    height: 20px;
+    width: 20px;
+    }
+
+
+a.button.links{
+    background-color: rgba(6, 6, 6, 0.8);
+    color: rgb(255, 255, 255);
+    }
+
+    a.button.external_button{ /* external download button will have exclusive green color only existed within index.html per project. This is a universal design for All external button. */
+    background-color: rgb(31, 191, 31);
+    color: white;
+    font-size: 15px;
+
+}
+a.button:hover{
+    color: black;
+    background-color: rgb(227, 227, 154);
+}
+
 }
 
 a.button.external_button{ /* external download button will have exclusive green color only existed within index.html per project. This is a universal design for All external button. */
@@ -153,6 +176,22 @@ a.button:hover{
     flex-wrap: wrap;
 }
 
+@media (max-width) {
+    .blockstyle_container{  /*  This container will separate each strips of colors using the properties below*/
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+    min-height: 10vb;
+    flex-wrap: wrap;
+}
+}
+
+
+
+
 .blockstyle{  /* universal style pattern. All block style will take this universal design unless specified with each children to be changed. */
     display: block;
     background-color: rgb(138, 138, 174);
@@ -167,6 +206,25 @@ a.button:hover{
     font-size: 20px;
     border-radius: 15%;
 }
+
+@media (max-width: 767px) {
+    .blockstyle{ /* universal style pattern. All block style will take this universal design unless specified with each children to be changed. */
+    display: block;
+    background-color: rgb(138, 138, 174);
+    text-align: center;
+    min-width: 180px;
+    min-height: 200px;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 10px 10px rgb(30, 24, 24);
+    position: relative;
+    font-size: 15px;
+    border-radius: 15%;
+}
+}
+
+
 .external.flex{ /* this is the flex box within the flex box that can move the inner flex box towards the center.*/
     display: flex;
     flex-direction: column;
@@ -222,6 +280,14 @@ a.button:hover{
 
 
 footer{
-    color: white;
+    color: rgb(137, 126, 126);
+    background: rgb(32, 28, 28);
+    padding: 20px;
 }
 
+@media (max-width: 767px){
+    footer{
+        text-align: center;
+        font-size: 11px;
+    }
+}
